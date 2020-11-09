@@ -71,18 +71,19 @@ class WorldMap extends React.Component {
         return (
             <div>
             <section>
+            <div class="dark-overlay"></div>
                 <header>
                     <h2 style={hStyle}>Where is the ISS Currently?</h2>
                 </header> 
             </section>
             <section class = "bg-cover bg-center map">
-            <div class="dark-overlay">
+            <div class="dark-overlay"></div>
             <div class="position-relative z-index-1">
             <div style = {divStyle} title={caption}>
                 <img src ={iss} alt = "ISS" height="50" width="100"  />   
             </div>
             </div>
-            </div>
+            
             </section>
             </div>
         );

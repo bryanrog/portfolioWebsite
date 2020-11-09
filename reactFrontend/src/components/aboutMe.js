@@ -13,8 +13,8 @@ class AboutMe extends React.Component {
       let textStyle = {
         "text-align": 'left',
         
-        "margin-right": 'auto',
-        "margin-left": 'auto',
+        "margin-right": '5%',
+        "margin-left": '5%',
     };
      let secStyle = {
        "background-color": 'gray',
@@ -23,6 +23,7 @@ class AboutMe extends React.Component {
         return (
           <div>
             <section id="1">
+            <div class = "dark-overlay" ></div>
             <div class="d-flex h-100 align-items-center">
               <div class="container">
                 <div class="row align-items-center">
@@ -45,6 +46,7 @@ class AboutMe extends React.Component {
                 </div>
               </div>
             </div>
+            
           </section>
           </div>
         );

@@ -6,7 +6,7 @@ class Footer extends React.Component {
     render() {
         return (
             <section>
-        
+            <div class="dark-overlay">
             <footer class="py-5 mt-5">
               <div class="row">
                 <div class="col-lg-6 text-center text-lg-left">
@@ -16,7 +16,9 @@ class Footer extends React.Component {
                   <p class="font-italic mb-0 text-gray">&copy; Template by <a href="https://bootstrapious.com/p/big-bootstrap-tutorial" class="text-gray">Bootstrapious</a></p>
                 </div>
               </div>
+              
             </footer>
+            </div>
           
        
       </section>
