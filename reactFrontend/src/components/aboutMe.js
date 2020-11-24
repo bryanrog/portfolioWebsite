@@ -35,10 +35,10 @@ class AboutMe extends React.Component {
                     <p style={textStyle}>I am a Colorado-based Product Manager turned Software Engineer trying to use technology to make a positive difference in the world. As an avid outdoorsman I'm passionate
                     about energy and the environment and preserving the world for future generations.</p>
                     <p style={textStyle}>I enjoy skiing, endurance sports, good food, travel, and travelling to ski, do endurance sports, or eat good food. My life goals include skiing and doing a race on every continent 
-                    (Antarctica will be tough, both logistically and morally).</p>
-                    <p style={textStyle}>I build this website as a way to get familiar with a variety of different technologies and frameworks. I used REACT for the front-end, Spring-Boot to pull data for the ISS feed below and am hosting
-                    this in an AWS S3 bucket. Future items I'd like to add are putting this into a docker container and deploying it to EKS. Might be a bit much for a simple webpage, but learning new technologies is fun and there is no
-                    kill like overkill.</p>
+                    (Antarctica will be tough, both logistically and sustainability wise).</p>
+                    <p style={textStyle}>I built this website as a way to get familiar with a variety of different technologies and frameworks. I used REACT for the frontend which I am hosting in an S3 bucket.
+                    I'm using a Spring microservice to pull data for the ISS feed below and am currently hosting that on AWS Elastic Beanstalk. I also have the microservice deployed to EKS in a Docker container
+                    and am working on provisioning the ALB to provide external access so I can run the backend from there.</p>
                     </body>
                    
                   </div>

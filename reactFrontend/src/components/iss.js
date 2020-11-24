@@ -30,13 +30,14 @@ class WorldMap extends React.Component {
         this.updateIssCoordinates();
         setInterval(() => {
             this.updateIssCoordinates();
-        }, 120000);
+        }, 360000);
       }
 
       async updateIssCoordinates() {
-        
+        let externalurl = "http://portfoliowebsite-env.eba-ck36a2n4.us-east-2.elasticbeanstalk.com/issLocations/1";
+        let realtiveurl = '/issLocations/1';
         console.log("Calling fetch");
-        let response = await fetch('/issapi/issLocations/1', {headers:{'Content-Type': 'application/json'}});
+        let response = await fetch(realtiveurl, {headers:{'Content-Type': 'application/json'}});
         console.log(response);
         //console.log(response.text())
         let body = await response.json();

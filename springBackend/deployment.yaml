@@ -1,0 +1,65 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: portfoliowebsite
+  name: portfoliowebsite
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: portfoliowebsite
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: portfoliowebsite
+    spec:
+      containers:
+      - image: bryanrogersjr/springbootdemos:portfoliowebsite
+        name: springdemos
+        ports:
+        - containerPort: 80
+        resources: {}
+      imagePullSecrets:
+       - name: regcred
+status: {}
+--- 
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app: portfoliowebsite
+  name: portfoliowebsite
+spec:
+  ports:
+  - name: 8080-8080
+    port: 8080
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    app: portfoliowebsite
+  type: ClusterIP
+status:
+  loadBalancer: {}
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app: portfoliowebsite
+  name: portfoliowebsite
+spec:
+  ports:
+  - name: 8080-8080
+    port: 8080
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    app: portfoliowebsite
+  type: ClusterIP
+status:
+  loadBalancer: {}
