@@ -36,9 +36,9 @@ class AboutMe extends React.Component {
                     about energy and the environment and preserving the world for future generations.</p>
                     <p style={textStyle}>I enjoy skiing, endurance sports, good food, travel, and travelling to ski, do endurance sports, or eat good food. My life goals include skiing and doing a race on every continent 
                     (Antarctica will be tough, both logistically and sustainability wise).</p>
-                    <p style={textStyle}>I built this website as a way to get familiar with a variety of different technologies and frameworks. I used REACT for the frontend which I am hosting in an S3 bucket.
-                    I'm using a Spring microservice to pull data for the ISS feed below and am currently hosting that on AWS Elastic Beanstalk. I also have the microservice deployed to EKS in a Docker container
-                    and am working on provisioning the ALB to provide external access so I can run the backend from there.</p>
+                    <p style={textStyle}>I built this website as a way to get familiar with a variety of different technologies and frameworks. I used React for the frontend which I am hosting in an S3 bucket.
+                    I'm using a Spring microservice to pull data for the ISS feed below. I used Docker to containerize the microservice for
+                    deployment to EKS and am using ALB to front the container.</p>
                     </body>
                    
                   </div>
